@@ -20,6 +20,30 @@ SecurePay Sentinel is a Python-based secure payment API project built with FastA
 - HTTP security headers
 - Automated security tests using Pytest
 
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A["Client / API Request"] --> B["FastAPI Application"]
+    B --> C["Security Headers Middleware"]
+    C --> D["Authentication"]
+    D --> E["JWT Verification"]
+    E --> F["Role-Based Access Control"]
+    F --> G["Customer Endpoints"]
+    F --> H["Admin Endpoints"]
+    G --> I["Transaction Rate Limiting"]
+    I --> J["SQLAlchemy ORM"]
+    H --> J
+    G --> K["Fernet Encryption"]
+    K --> L[("SQLite Database")]
+    J --> L
+    G --> M["Audit Logging"]
+    H --> M
+    M --> L
+```
+
+
 ## Technology Stack
 
 | Category | Technologies |
