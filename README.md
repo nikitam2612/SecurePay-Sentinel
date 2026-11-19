@@ -1,5 +1,10 @@
 
+<p align="center">
+  <img src="assets/securepay-sentinel-banner.png" width="100%" alt="SecurePay Sentinel — Secure Payment API and Security Assessment Platform">
+</p>
+
 # SecurePay Sentinel
+
 
 ### Secure Payment API and Security Assessment Platform
 
