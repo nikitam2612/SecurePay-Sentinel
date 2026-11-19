@@ -1,0 +1,10 @@
+
+fastapi[standard]
+sqlalchemy>=2.0,<3.0
+PyJWT
+pwdlib[argon2]
+python-dotenv
+cryptography
+pytest
+httpx
+email-validator
